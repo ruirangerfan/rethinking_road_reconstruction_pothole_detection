@@ -4,7 +4,7 @@ This repository mainly provides the data used in our recent publication "[Rethin
 
 **A story behind this work:**
 
-We experienced a very annoying review process for this paper. It was originally submitted for peer-review on Apr. 11, 2019. We got the initial feedback on Jul. 28, 2019, and resubmitted our first revision on Aug. 22, 2019. However, nothing was back to us until Jul. 09, 2020 (after dozens of emails from us enquiring about the reviewer's feedback). We submitted the second revision on Aug. 06, 2020, and FINALLY got accepted on Jan. 01, 2021. So, it was reviewed for 21 months. I think this work is already out-of-date when it was accepted. Anyway, I am going to provide you with the data we used in this work. 
+We experienced a very annoying review process for this paper. It was originally submitted for peer-review on **Apr. 11, 2019**. We got the initial feedback on **Jul. 28, 2019**, and resubmitted our first revision on **Aug. 22, 2019**. However, nothing was back to us until **Jul. 09, 2020** (after dozens of emails from us enquiring about the reviewer's feedback). We submitted the second revision on **Aug. 06, 2020**, and FINALLY got accepted on **Jan. 01, 2021**. So, it was reviewed for 21 months. I think this work is already out-of-date when it was accepted. Anyway, I am going to provide you with the data we used in this work. 
 
 
 
