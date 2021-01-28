@@ -16,6 +16,6 @@ We experienced a very annoying review process for this paper. It was originally 
 
 The pothole detection dataset can be download from this [repository](https://github.com/ruirangerfan/stereo_pothole_datasets). You can run our demo code to see the visualization of different types of road data. 
 
-## Road Pothole 3D Reconstruction Dataset: 
+## Road Pothole 3D Geometry Reconstruction Dataset: 
 
-Originally in our [previous work](https://www.ruirangerfan.com/pdf/tip2018_fan.pdf), the accuracy of road surface 3D reconstruction was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. 
+In our [previous work](https://www.ruirangerfan.com/pdf/tip2018_fan.pdf), the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is indirect. Therefore, in this work, we evaluated the accuracy of reconstructed road potholes in a straightforward way. 
