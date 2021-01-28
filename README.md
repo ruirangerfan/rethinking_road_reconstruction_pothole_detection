@@ -19,3 +19,7 @@ The pothole detection dataset can be download from this [repository](https://git
 ## Road Pothole 3D Geometry Reconstruction Dataset: 
 
 In our [previous work](https://www.ruirangerfan.com/pdf/tip2018_fan.pdf), the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is indirect. Therefore, in this work, we evaluated the accuracy of reconstructed road potholes in a straightforward way. 
+
+We first poured enough gypsum plaster into a pothole and dug the gypsum mold out, when it became dry and hardened. An example of the gypsum mold is shown below:
+
+![Drag Racing](figs/laser_scanner.jpg)
