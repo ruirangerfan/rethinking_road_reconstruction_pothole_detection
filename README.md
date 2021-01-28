@@ -18,9 +18,13 @@ The pothole detection dataset can be download from this [repository](https://git
 
 ## Road Pothole 3D Geometry Reconstruction Dataset: 
 
-In our [previous work](https://www.ruirangerfan.com/pdf/tip2018_fan.pdf), the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is an indirect way! Therefore, in this work, we evaluated the accuracy of reconstructed road potholes in a straightforward way. 
+In our [previous work](https://www.ruirangerfan.com/pdf/tip2018_fan.pdf), the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is an indirect way! Therefore, in this work, we evaluated the accuracy of the reconstructed road potholes in a straightforward way. 
 
-We first poured enough gypsum plaster into a pothole and dug the gypsum mold out, when it became dry and hardened. An example of the gypsum mold is shown below:
+We first poured enough gypsum plaster into a pothole and dug the gypsum mold out, when it became dry and hardened. Then, we used a [BQ Ciclop 3D laser scanner](https://www.amazon.com/Ciclop-Scanner-Kit-Advanced-Laser/dp/B014G8GMEO) (assembled and calibrated by ourselves). We provide the materials regarding the assembly and calibration of a BQ Ciclop 3D laser scanner in [laser_scanner](./laser_scanner) folder. An example of our used laser scanner and the obtained gypsum mold is shown below:
 <p align="center">
 <img src='./figs/laser_scanner.jpg' width=500px>
 </p>
+
+
+
+
