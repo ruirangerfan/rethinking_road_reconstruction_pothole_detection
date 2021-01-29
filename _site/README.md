@@ -51,12 +51,46 @@ where (a) left road images, (b) transformed disparity images (obtained using our
 <img src='./figs/results.png' width=900px>
 </p>
 
-## 3. Citation
+## 3. Citations
 Please cite the following papers when using our road data:
-
-
-
+```
+@article{fan2020tcyb,
+  title={Rethinking Road Surface 3D Reconstruction and Pothole Detection: 
+  From Perspective Transformation to Disparity Map Segmentation},
+  author={Fan, Rui and Ozgunalp, Umar and Wang, Yuan and Liu, Ming and Pitas, Ioannis},
+  journal={IEEE Transactions on Cybernetics},
+  year={2021},
+  publisher={IEEE}
+}
+```
+```
+@article{fan2019tip,
+  title={Pothole detection based on disparity transformation and road surface modeling},
+  author={Fan, Rui and Ozgunalp, Umar and Hosking, Brett and Liu, Ming and Pitas, Ioannis},
+  journal={IEEE Transactions on Image Processing},
+  volume={29},
+  pages={897--908},
+  year={2019},
+  publisher={IEEE}
+}
+```
+```
+@article{fan2019road,
+  title={Road damage detection based on unsupervised disparity map segmentation},
+  author={Fan, Rui and Liu, Ming},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={21},
+  number={11},
+  pages={4906--4911},
+  year={2019},
+  publisher={IEEE}
+}
+```
 
 
 ## References
-[1]
+[1] Zhang, Z., 2013. Advanced stereo vision disparity calculation and obstacle analysis for intelligent vehicles (Doctoral dissertation, University of Bristol).
+<br>
+[2] Mikhailiuk, A. and Dahnoun, N., 2016, October. Real-time pothole detection on TMS320C6678 DSP. In 2016 IEEE International Conference on Imaging Systems and Techniques (IST) (pp. 123-128). IEEE.
+<br>
+[3] Fan, R., Ozgunalp, U., Hosking, B., Liu, M. and Pitas, I., 2019. Pothole detection based on disparity transformation and road surface modeling. IEEE Transactions on Image Processing, 29, pp.897-908.
