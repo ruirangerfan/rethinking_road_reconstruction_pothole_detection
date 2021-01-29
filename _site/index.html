@@ -27,9 +27,9 @@
 
       <h1 id="rethinking-road-surface-3d-reconstruction-and-pothole-detection-from-perspective-transformation-to-disparity-map-segmentation">Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation</h1>
 
-<p>This repository provides the data used in our recent publication “<a href="https://arxiv.org/pdf/2012.10802.pdf">Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation</a>”.</p>
+<p>This repository provides the road data used in our recent publication “<a href="https://arxiv.org/pdf/2012.10802.pdf">Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation</a>”.</p>
 
-<p><strong>A story behind this work:</strong></p>
+<h3 id="stories-behind-this-work"><strong>Stories behind this work:</strong></h3>
 
 <ul>
   <li>
@@ -39,23 +39,23 @@
     <p>When submitting this paper, I was a fresh postdoc at HKUST.</p>
   </li>
   <li>
-    <p>When this work was finally accepted, I have been working at UCSD for almost a year, and my postdoc career is nearly coming to an end…</p>
+    <p>When this paper was FINALLY accepted, it had been almost a year since I started my second postdoc at UCSD, and now my postdoc career is nearly coming to an end…</p>
   </li>
 </ul>
 
-<p>We experienced a very annoying review process for this paper. It was originally submitted for peer-review on <strong>Apr. 11, 2019</strong>. We got the initial feedback on <strong>Jul. 28, 2019</strong>, and resubmitted our first revision on <strong>Aug. 22, 2019</strong>. However, nothing was back to us until <strong>Jul. 09, 2020</strong> (after DOZENS of emails from us enquiring about the reviewer’s feedback). We submitted the second revision on <strong>Aug. 06, 2020</strong>, and FINALLY got accepted on <strong>Jan. 01, 2021</strong>. So, it was reviewed for <strong>21 months</strong>. In my opinion, this work is already out-of-date when it was published. Anyway, I am going to provide you with the data we used in this work.</p>
+<p>We experienced a very annoying review process. We submitted this work for peer-review on <strong>Apr. 11, 2019</strong>. We got the initial feedback on <strong>Jul. 28, 2019</strong>, and resubmitted our first revision on <strong>Aug. 22, 2019</strong>. However, nothing was back to us until <strong>Jul. 09, 2020</strong> (after DOZENS of emails from us, enquiring about the reviewers’ feedback). We submitted the second revision on <strong>Aug. 06, 2020</strong>, and it FINALLY got accepted on <strong>Jan. 01, 2021</strong>. So, the review lasted for around <strong>21 months</strong>. Anyway, I am providing you with the data we used in this work.</p>
 
 <h2 id="1-road-pothole-3d-geometry-reconstruction-dataset">1. Road Pothole 3D Geometry Reconstruction Dataset:</h2>
 
-<p>In our <a href="https://www.ruirangerfan.com/pdf/tip2018_fan.pdf">previous work</a>, the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is an indirect way! Therefore, in this work, we evaluated the accuracy of the reconstructed road potholes in a straightforward way.</p>
+<p>In our <a href="https://www.ruirangerfan.com/pdf/tip2018_fan.pdf">previous work</a>, the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is an indirect way! Therefore, in this work, we evaluated the reconstructed road potholes’ accuracy straightforwardly.</p>
 
-<p>We first poured enough gypsum plaster into a pothole and dug the gypsum mold out, when it became dry and hardened. Then, we used a <a href="https://www.amazon.com/Ciclop-Scanner-Kit-Advanced-Laser/dp/B014G8GMEO">BQ Ciclop 3D laser scanner</a> (assembled and calibrated by ourselves). We provide the materials regarding the assembly and calibration of a BQ Ciclop 3D laser scanner in <a href="./laser_scanner">laser_scanner</a> folder. An example of our used laser scanner and the obtained gypsum mold is shown below:</p>
+<p>We first poured enough gypsum plaster into a pothole and dug the gypsum mold out when it became dry and hardened. Then, we used a <a href="https://www.amazon.com/Ciclop-Scanner-Kit-Advanced-Laser/dp/B014G8GMEO">BQ Ciclop 3D laser scanner</a> (assembled and calibrated by ourselves). We provide <strong>the materials regarding the assembly and calibration of such a BQ Ciclop 3D laser scanner</strong> in the <a href="./materials">materials</a> folder. An example of our used laser scanner and the obtained gypsum mold is shown below:</p>
 
 <p align="center">
 <img src="./figs/laser_scanner.jpg" width="400px" />
 </p>
 
-<p>An example of the 3D pothole model reconstructed using the laser scanner is shown below:</p>
+<p>An example of the 3D road pothole model reconstructed using this laser scanner is shown below:</p>
 
 <p align="center">
 <img src="./figs/3d_model.gif" width="500px" />
@@ -64,20 +64,20 @@
 <p>Then, we use the iterative closest point (ICP) algorithm to register the road pothole point clouds A and B (see below), which are acquired using laser scanning and stereo vision technologies, respectively.</p>
 
 <p align="center">
-<img src="./figs/registration.png" width="600px" />
+<img src="./figs/registration.png" width="500px" />
 </p>
-
-<p>Our experimental results indicate that the road pothole 3D geometry reconstructed using stereo vision technology achieved an accuracy of 2.23 mm. The stereo road images pairs and their ground-truth road pothole 3D geometry models are provided in <a href="./dataset">dataset</a> folder.</p>
+<p>To quantify road pothole 3D geometry reconstruction accuracy, we measure the root mean squared closest distance error.
+Our experimental results indicate that the road pothole 3D geometry reconstructed using stereo vision technology achieved an accuracy of 2.23 mm. The stereo road image pairs and their ground-truth road pothole 3D geometry models are provided in the <a href="./dataset">dataset</a> folder.</p>
 
 <h2 id="2-road-pothole-detection-dataset">2. Road Pothole Detection Dataset</h2>
 
-<p>The pothole detection dataset can be download from this <a href="https://github.com/ruirangerfan/stereo_pothole_datasets">repository</a>. You can run our demo code to see the visualization of different types of road data. Some examples of the road pothole detection results are shown below:</p>
+<p>The road pothole detection dataset can be download from this <a href="https://github.com/ruirangerfan/stereo_pothole_datasets">repository</a>. You can run our demo code to see the visualization of different types of road data. Some examples of the road pothole detection results are given below:</p>
 
 <p align="center">
 <img src="./figs/pothole_detection_results.png" width="900px" />
 </p>
 
-<p>where (a) left road images, (b) transformed disparity images (obtained using our previously published <a href="https://github.com/ruirangerfan/unsupervised_disparity_map_segmentation">disparity transformation algorithm</a>), (c)-(f) pothole detection results achieved using [1], [2], [3] and our method, respectively. The quantitative results are also shown below:</p>
+<p>where (a) left road images, (b) transformed disparity images (obtained using our previously published <a href="https://github.com/ruirangerfan/unsupervised_disparity_map_segmentation">disparity transformation algorithm</a>), (c)-(f) pothole detection results achieved using [1], [2], [3] and our method, respectively. The quantitative results are also provided below:</p>
 
 <p align="center">
 <img src="./figs/results.png" width="900px" />
