@@ -45,24 +45,49 @@
 
 <p>We experienced a very annoying review process for this paper. It was originally submitted for peer-review on <strong>Apr. 11, 2019</strong>. We got the initial feedback on <strong>Jul. 28, 2019</strong>, and resubmitted our first revision on <strong>Aug. 22, 2019</strong>. However, nothing was back to us until <strong>Jul. 09, 2020</strong> (after DOZENS of emails from us enquiring about the reviewer’s feedback). We submitted the second revision on <strong>Aug. 06, 2020</strong>, and FINALLY got accepted on <strong>Jan. 01, 2021</strong>. So, it was reviewed for <strong>21 months</strong>. In my opinion, this work is already out-of-date when it was published. Anyway, I am going to provide you with the data we used in this work.</p>
 
-<h2 id="road-pothole-detection-dataset">Road Pothole Detection Dataset</h2>
-
-<p>The pothole detection dataset can be download from this <a href="https://github.com/ruirangerfan/stereo_pothole_datasets">repository</a>. You can run our demo code to see the visualization of different types of road data.</p>
-
-<h2 id="road-pothole-3d-geometry-reconstruction-dataset">Road Pothole 3D Geometry Reconstruction Dataset:</h2>
+<h2 id="1-road-pothole-3d-geometry-reconstruction-dataset">1. Road Pothole 3D Geometry Reconstruction Dataset:</h2>
 
 <p>In our <a href="https://www.ruirangerfan.com/pdf/tip2018_fan.pdf">previous work</a>, the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is an indirect way! Therefore, in this work, we evaluated the accuracy of the reconstructed road potholes in a straightforward way.</p>
 
 <p>We first poured enough gypsum plaster into a pothole and dug the gypsum mold out, when it became dry and hardened. Then, we used a <a href="https://www.amazon.com/Ciclop-Scanner-Kit-Advanced-Laser/dp/B014G8GMEO">BQ Ciclop 3D laser scanner</a> (assembled and calibrated by ourselves). We provide the materials regarding the assembly and calibration of a BQ Ciclop 3D laser scanner in <a href="./laser_scanner">laser_scanner</a> folder. An example of our used laser scanner and the obtained gypsum mold is shown below:</p>
+
 <p align="center">
 <img src="./figs/laser_scanner.jpg" width="400px" />
 </p>
+
 <p>An example of the 3D pothole model reconstructed using the laser scanner is shown below:</p>
+
 <p align="center">
 <img src="./figs/3d_model.gif" width="500px" />
 </p>
-<p>Then, we use the iterative closest point (ICP) algorithm to register the road pothole point clouds A and B, which are acquired using laser scanning and stereo vision, respectively. An illustration of road pothole point cloud registration is shown below:</p>
 
+<p>Then, we use the iterative closest point (ICP) algorithm to register the road pothole point clouds A and B (see below), which are acquired using laser scanning and stereo vision technologies, respectively.</p>
+
+<p align="center">
+<img src="./figs/registration.png" width="600px" />
+</p>
+
+<p>Our experimental results indicate that the road pothole 3D geometry reconstructed using stereo vision technology achieved an accuracy of 2.23 mm. The stereo road images pairs and their ground-truth road pothole 3D geometry models are provided in <a href="./dataset">dataset</a> folder.</p>
+
+<h2 id="2-road-pothole-detection-dataset">2. Road Pothole Detection Dataset</h2>
+
+<p>The pothole detection dataset can be download from this <a href="https://github.com/ruirangerfan/stereo_pothole_datasets">repository</a>. You can run our demo code to see the visualization of different types of road data. Some examples of the road pothole detection results are shown below:</p>
+
+<p align="center">
+<img src="./figs/pothole_detection_results.png" width="900px" />
+</p>
+
+<p>where (a) left road images, (b) transformed disparity images (obtained using our previously published <a href="https://github.com/ruirangerfan/unsupervised_disparity_map_segmentation">disparity transformation algorithm</a>), (c)-(f) pothole detection results achieved using [1], [2], [3] and our method, respectively. The quantitative results are also shown below:</p>
+
+<p align="center">
+<img src="./figs/results.png" width="900px" />
+</p>
+
+<h2 id="3-citation">3. Citation</h2>
+<p>Please cite the following papers when using our road data:</p>
+
+<h2 id="references">References</h2>
+<p>[1]</p>
 
 
       
