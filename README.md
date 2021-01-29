@@ -25,7 +25,7 @@ Then, we use the iterative closest point (ICP) algorithm to register the road po
 <img src='./figs/registration.png' width=500px>
 </p>
 To quantify road pothole 3D geometry reconstruction accuracy, we measure the root mean squared closest distance error.
-Our experimental results indicate that the road pothole 3D geometry reconstructed using stereo vision technology achieved an accuracy of 2.23 mm. The stereo road image pairs and their ground-truth road pothole 3D geometry models are provided in the [ dataset ](https://github.com/ruirangerfan/rethinking_road_reconstruction_pothole_detection/tree/main/dataset) folder. 
+Our experimental results indicate that the road pothole 3D geometry reconstructed using stereo vision technology achieved an accuracy of 2.23 mm. The stereo road image pairs and their ground-truth road pothole 3D geometry models are provided in the [materials](./materials) folder. 
 
 
 ## 2. Road Pothole Detection Dataset
