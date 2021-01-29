@@ -1,6 +1,6 @@
 # Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation
 
-This repository provides the road data used in our recent publication "[Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation](https://arxiv.org/pdf/2012.10802.pdf)". 
+This repository provides the road data used in our recent publication "[Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation](https://arxiv.org/pdf/2012.10802.pdf)" [IEEE Transactions on Cybernetics]. 
 
 
 ## 1. Road Pothole 3D Geometry Reconstruction Dataset: 

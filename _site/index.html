@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation | rethinking_road_reconstruction_pothole_detection</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="rethinking_road_reconstruction_pothole_detection" />
+<script type="application/ld+json">
+{"headline":"Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation","@type":"WebSite","url":"http://localhost:4000/","name":"rethinking_road_reconstruction_pothole_detection","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=77387f1441accba127c5beff48636027ac3c7811">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">rethinking_road_reconstruction_pothole_detection</a></h1>
+      
+
+      <h1 id="rethinking-road-surface-3d-reconstruction-and-pothole-detection-from-perspective-transformation-to-disparity-map-segmentation">Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation</h1>
+
+<p>This repository provides the road data used in our recent publication “<a href="https://arxiv.org/pdf/2012.10802.pdf">Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation</a>” [IEEE Transactions on Cybernetics].</p>
+
+<h2 id="1-road-pothole-3d-geometry-reconstruction-dataset">1. Road Pothole 3D Geometry Reconstruction Dataset:</h2>
+
+<p>In our <a href="https://www.ruirangerfan.com/pdf/tip2018_fan.pdf">previous work</a>, the accuracy of the reconstructed 3D road surface was evaluated using three sample models printed with a MakerBot Replicator 2 Desktop 3D Printer. This is an indirect way! Therefore, in this work, we evaluated the reconstructed road potholes’ accuracy straightforwardly.</p>
+
+<p>We first poured enough gypsum plaster into a pothole and dug the gypsum mold out when it became dry and hardened. Then, we used a <a href="https://www.amazon.com/Ciclop-Scanner-Kit-Advanced-Laser/dp/B014G8GMEO">BQ Ciclop 3D laser scanner</a> (assembled and calibrated by ourselves). We provide <strong>the materials regarding the assembly and calibration of such a BQ Ciclop 3D laser scanner</strong> in the <a href="./materials">materials</a> folder. An example of our used laser scanner and the obtained gypsum mold is shown below:</p>
+
+<p align="center">
+<img src="./figs/laser_scanner.jpg" width="400px" />
+</p>
+
+<p>An example of the 3D road pothole model reconstructed using this laser scanner is shown below:</p>
+
+<p align="center">
+<img src="./figs/3d_model.gif" width="500px" />
+</p>
+
+<p>Then, we use the iterative closest point (ICP) algorithm to register the road pothole point clouds A and B (see below), which are acquired using laser scanning and stereo vision technologies, respectively.</p>
+
+<p align="center">
+<img src="./figs/registration.png" width="500px" />
+</p>
+<p>To quantify road pothole 3D geometry reconstruction accuracy, we measure the root mean squared closest distance error.
+Our experimental results indicate that the road pothole 3D geometry reconstructed using stereo vision technology achieved an accuracy of 2.23 mm. The stereo road image pairs and their ground-truth road pothole 3D geometry models are provided in the <a href="./dataset">dataset</a> folder.</p>
+
+<h2 id="2-road-pothole-detection-dataset">2. Road Pothole Detection Dataset</h2>
+
+<p>The road pothole detection dataset can be download from this <a href="https://github.com/ruirangerfan/stereo_pothole_datasets">repository</a>. You can run our demo code to see the visualization of different types of road data. Some examples of the road pothole detection results are given below:</p>
+
+<p align="center">
+<img src="./figs/pothole_detection_results.png" width="900px" />
+</p>
+
+<p>where (a) left road images, (b) transformed disparity images (obtained using our previously published <a href="https://github.com/ruirangerfan/unsupervised_disparity_map_segmentation">disparity transformation algorithm</a>), (c)-(f) pothole detection results achieved using [1], [2], [3] and our method, respectively. The quantitative results are also provided below:</p>
+
+<p align="center">
+<img src="./figs/results.png" width="900px" />
+</p>
+
+<h2 id="3-citations">3. Citations</h2>
+<p>Please cite the following papers when using our road data:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{fan2020tcyb,
+  title={Rethinking Road Surface 3D Reconstruction and Pothole Detection: 
+  From Perspective Transformation to Disparity Map Segmentation},
+  author={Fan, Rui and Ozgunalp, Umar and Wang, Yuan and Liu, Ming and Pitas, Ioannis},
+  journal={IEEE Transactions on Cybernetics},
+  year={2021},
+  publisher={IEEE}
+}
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{fan2019tip,
+  title={Pothole detection based on disparity transformation and road surface modeling},
+  author={Fan, Rui and Ozgunalp, Umar and Hosking, Brett and Liu, Ming and Pitas, Ioannis},
+  journal={IEEE Transactions on Image Processing},
+  volume={29},
+  pages={897--908},
+  year={2019},
+  publisher={IEEE}
+}
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{fan2019road,
+  title={Road damage detection based on unsupervised disparity map segmentation},
+  author={Fan, Rui and Liu, Ming},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={21},
+  number={11},
+  pages={4906--4911},
+  year={2019},
+  publisher={IEEE}
+}
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+<p>[1] Zhang, Z., 2013. Advanced stereo vision disparity calculation and obstacle analysis for intelligent vehicles (Doctoral dissertation, University of Bristol).
+<br />
+[2] Mikhailiuk, A. and Dahnoun, N., 2016, October. Real-time pothole detection on TMS320C6678 DSP. In 2016 IEEE International Conference on Imaging Systems and Techniques (IST) (pp. 123-128). IEEE.
+<br />
+[3] Fan, R., Ozgunalp, U., Hosking, B., Liu, M. and Pitas, I., 2019. Pothole detection based on disparity transformation and road surface modeling. IEEE Transactions on Image Processing, 29, pp.897-908.</p>
+
+<h2 id="stories-behind-this-work"><strong>Stories behind this work:</strong></h2>
+
+<ul>
+  <li>
+    <p>When working on this project, I was a third-year Ph.D. student at the University of Bristol.</p>
+  </li>
+  <li>
+    <p>When submitting this paper, I was a fresh postdoc at HKUST.</p>
+  </li>
+  <li>
+    <p>When this paper was FINALLY accepted, it had been almost a year since I started my second postdoc at UCSD, and now my postdoc career is nearly coming to an end…</p>
+  </li>
+</ul>
+
+<p>We experienced a very annoying review process. We submitted this work for peer-review on <strong>Apr. 11, 2019</strong>. We got the initial feedback on <strong>Jul. 28, 2019</strong>, and resubmitted our first revision on <strong>Aug. 22, 2019</strong>. However, nothing was back to us until <strong>Jul. 09, 2020</strong> (after DOZENS of emails from us, enquiring about the reviewers’ feedback). We submitted the second revision on <strong>Aug. 06, 2020</strong>, and it FINALLY got accepted on <strong>Jan. 01, 2021</strong>. So, the review lasted for around <strong>21 months</strong>. Anyway, I provided you with the data we used in this work.</p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>
