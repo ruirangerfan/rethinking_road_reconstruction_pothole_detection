@@ -2,15 +2,6 @@
 
 This repository provides the road data used in our recent publication "[Rethinking Road Surface 3D Reconstruction and Pothole Detection: From Perspective Transformation to Disparity Map Segmentation](https://arxiv.org/pdf/2012.10802.pdf)". 
 
-### **Stories behind this work:**
-
-- When working on this project, I was a third-year Ph.D. student at the University of Bristol. 
-
-- When submitting this paper, I was a fresh postdoc at HKUST. 
-
-- When this paper was FINALLY accepted, it had been almost a year since I started my second postdoc at UCSD, and now my postdoc career is nearly coming to an end...
-
-We experienced a very annoying review process. We submitted this work for peer-review on **Apr. 11, 2019**. We got the initial feedback on **Jul. 28, 2019**, and resubmitted our first revision on **Aug. 22, 2019**. However, nothing was back to us until **Jul. 09, 2020** (after DOZENS of emails from us, enquiring about the reviewers' feedback). We submitted the second revision on **Aug. 06, 2020**, and it FINALLY got accepted on **Jan. 01, 2021**. So, the review lasted for around **21 months**. Anyway, I am providing you with the data we used in this work. 
 
 ## 1. Road Pothole 3D Geometry Reconstruction Dataset: 
 
@@ -94,3 +85,14 @@ Please cite the following papers when using our road data:
 [2] Mikhailiuk, A. and Dahnoun, N., 2016, October. Real-time pothole detection on TMS320C6678 DSP. In 2016 IEEE International Conference on Imaging Systems and Techniques (IST) (pp. 123-128). IEEE.
 <br>
 [3] Fan, R., Ozgunalp, U., Hosking, B., Liu, M. and Pitas, I., 2019. Pothole detection based on disparity transformation and road surface modeling. IEEE Transactions on Image Processing, 29, pp.897-908.
+
+
+## **Stories behind this work:**
+
+- When working on this project, I was a third-year Ph.D. student at the University of Bristol. 
+
+- When submitting this paper, I was a fresh postdoc at HKUST. 
+
+- When this paper was FINALLY accepted, it had been almost a year since I started my second postdoc at UCSD, and now my postdoc career is nearly coming to an end...
+
+We experienced a very annoying review process. We submitted this work for peer-review on **Apr. 11, 2019**. We got the initial feedback on **Jul. 28, 2019**, and resubmitted our first revision on **Aug. 22, 2019**. However, nothing was back to us until **Jul. 09, 2020** (after DOZENS of emails from us, enquiring about the reviewers' feedback). We submitted the second revision on **Aug. 06, 2020**, and it FINALLY got accepted on **Jan. 01, 2021**. So, the review lasted for around **21 months**. Anyway, I provided you with the data we used in this work. 
